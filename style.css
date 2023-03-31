@@ -1,0 +1,419 @@
+/*
+Theme Name: NH Toolbox Classic
+
+*/
+
+:root {
+  --orange: #f7714e;
+  --dark-maroon: #711115;
+  --white: #fff;
+  --black: #393939;
+  --gray: #454444;
+  --offwhite: #F4F3E2;
+  --beige: #E2DFB6;
+  --breadcrumb: #FEFDED;
+  --playfair: "Playfair Display", serif;
+  --oswald: "Oswald", sans-serif;
+  --roboto: 'Roboto', sans-serif;
+  --link: #3B7BFD;
+}
+
+.dark-hero {
+  background-color: var(--orange);
+}
+
+.dark-hero-body {
+  text-align: center;
+  max-width: 68.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playfair-title {
+  font-family: var(--playfair);
+  text-align: center;
+  font-size: 1.938rem;
+  color: var(--dark-maroon);
+  text-transform: uppercase;
+}
+
+.oswald-title {
+  font-family: var(--oswald);
+  text-align: center;
+  font-size: 2.938rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.navbar-item a{
+    font-family: var(--roboto);
+    color: var(--black) !important;
+}
+
+.navbar-item a:hover{
+    text-decoration: underline;
+}
+
+.main-footer {
+    text-align: center;
+    font-family: var(--roboto);
+    margin-bottom: 0.625rem;
+}
+
+.housing-strategies-section {
+  background-color: var(--dark-maroon);
+  font-family: var(--oswald);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  font-size: 2.375rem;
+}
+
+.housing-strategies-separator {
+  background-color: var(--orange);
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.strategy-card-separator {
+  background-color: var(--beige);
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.housing-strategies-section h2{
+  font-size: 1.125rem;
+  padding-top: 1.563rem;
+}
+
+.filter-button {
+  font-family: var(--roboto);
+  font-size: 1rem;
+  text-transform: none;
+  margin: 0.625rem;
+  border-color: var(--white);
+  background-color: var(--white);
+}
+
+.filter-button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+}
+
+.filter-button.is-active {
+  background-color: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+}
+
+.filter-button.is-active:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+
+.strategy-card {
+  background-color: var(--offwhite);
+  margin-top: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.313rem;
+  display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.strategy-card .columns {
+  margin: 10px;
+}
+
+.strategy-card h3 {
+  font-size: 24px;
+  font-family: var(--roboto);
+  text-align: left;
+  text-transform: none;
+}
+
+.strategy-card h3 a {
+  color: var(--dark-maroon);
+}
+
+.strategy-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.strategy-card p {
+  font-size: 16px;
+  font-family: var(--roboto);
+  color: var(--black);
+  text-align: left;
+  text-transform: none;
+}
+
+.strategy-categories {
+  margin: 10px;
+  font-size: 16px;
+  font-family: var(--roboto);
+  color: var(--black);
+  text-align: left;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.strategy-categories-strategy {
+  font-size: 16px;
+  font-family: var(--roboto);
+  color: var(--black);
+  text-align: left;
+  text-transform: none;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.category-button {
+  border-radius:18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  cursor: default;
+}
+
+.strategy-oswald-title {
+  font-family: var(--oswald);
+  font-size: 47px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.strategy-hero {
+  background-color: var(--orange);
+
+  border: 1px solid var(--beige);
+}
+
+.strategy-hero-body {
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.issues-addressed-text {
+  vertical-align:middle;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.strategy-main {
+  margin: 20px;
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.strategy-main-header {
+  color: var(--orange);
+  font-family: var(--oswald);
+  font-size: 34px;
+}
+
+.strategy-main-section {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+.strategy-main-section-content p{
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.strategy-main-section-content.dot li{
+  list-style: disc;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.strategy-main-section-content.numbered li{
+  list-style: decimal;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.strategy-main-section-content.numbered li ol li{
+  list-style:lower-latin;
+}
+
+.strategy-featured-image {
+  margin-left:20px;
+}
+
+.image-caption {
+  margin-left: 20px;
+  font-family: var(--roboto);
+  color: var(--orange);
+}
+
+.sidebar {
+  padding:10px;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-container {
+  border: 1px solid var(--beige);
+  margin: 20px;
+}
+
+.sidebar-separator {
+  background-color: var(--beige);
+  margin:20px;
+}
+
+.sidebar-container h3{
+  color: var(--orange);
+  font-family: var(--oswald);
+  font-size: 24px;
+  margin: 15px;
+}
+
+.sidebar-container li{
+  color: var(--black);
+  font-family: var(--roboto);
+  font-size: 16px;
+  margin: 15px;
+}
+
+.sidebar-container a{
+  color:var(--link)
+}
+
+.sidebar-container a:hover{
+  text-decoration: underline;
+  color:var(--link)
+}
+
+.read-more {
+  margin: 20px;
+}
+
+.related-tools-hero{
+  background-color: var(--dark-maroon);
+}
+
+.related-tools-hero-body{
+  max-width: 1525px;
+}
+
+.related-tools-hero-body hr{
+  background-color: var(--orange);
+}
+
+.related-tools-hero-body h2{
+  color: var(--white);
+  font-family: var(--oswald);
+  font-size: 34px;
+}
+
+.related-tool-card {
+  background-color: var(--offwhite);
+  margin: 20px;
+  border-radius: 5px;
+  color: var(--dark-maroon);
+  font-family: var(--roboto);
+  max-width: max-content;
+}
+
+.related-tool-card img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.related-tool-card h4{
+  margin:10px;
+}
+
+.related-tool-card a {
+  color: var(--dark-maroon);
+}
+
+.related-tool-card a:hover {
+  text-decoration: underline;
+}
+
+.not-found-hero {
+ background-color: var(--orange);
+}
+
+.not-found-hero-body {
+  text-align: center;
+  font-size: 48px;
+  font-family: var(--oswald);
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.go-home-link {
+  color: var(--dark-maroon);
+}
+
+.go-home-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-container {
+  background-color: var(--breadcrumb);
+  border: 1px solid var(--beige);
+  padding: 10px;
+}
+
+.breadcrumb {
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study-hero {
+  max-width: 1125px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study-hero h1 {
+  font-size: 47px;
+  color: var(--dark-maroon);
+  font-family: var(--oswald);
+  text-transform: uppercase;
+}
+
+.case-study-hero hr {
+  background-color: var(--offwhite);
+}
+
+.strategy-categories-case-study {
+  font-size: 13px !important;
+  font-family: var(--roboto);
+  color: var(--gray);
+  text-align: left;
+  text-transform: none;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.category-button-case-study {
+  border-radius:18px;
+  cursor: default;
+  background-color: var(--offwhite);
+}
+
+.issues-addressed-text-case-study {
+  margin-top: 5px;
+}
