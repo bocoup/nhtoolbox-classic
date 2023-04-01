@@ -5,8 +5,25 @@
         $field = get_field("case_studies");
         if (!empty($field)): ?>
             <?php foreach ($field as $value): ?>
-                <h2><?php echo $value->post_title ?></h2>
-                <div><?php echo $value->post_content ?></div>
+                <?php $image_orientation = get_field("image_orientation", $value->ID);
+
+                $args = array(
+                    "value" => $value
+                );
+
+                if ($image_orientation == "below"):
+                    get_template_part('template-parts/image-orientation/image-orientation-below', null, $args);
+                elseif ($image_orientation == "above"):
+                    get_template_part('template-parts/image-orientation/image-orientation-above', null, $args);
+                elseif ($image_orientation == "left"):
+                    get_template_part('template-parts/image-orientation/image-orientation-left', null, $args);
+                elseif ($image_orientation == "right"):
+                    get_template_part('template-parts/image-orientation/image-orientation-right', null, $args);
+                else:
+                    get_template_part('template-parts/image-orientation/image-orientation-none', null, $args);
+                endif;
+                ?>
+
             <?php endforeach; ?>
         <?php endif; ?>
     </div>

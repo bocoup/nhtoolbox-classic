@@ -14,7 +14,7 @@
 <section class="hero case-study-hero">
     <div class="case-study-hero-body hero-body">
         <h1>
-            <?php echo get_the_title(); ?> Case Studies
+            <?php echo get_the_title(); ?> <span>Case Studies</span>
         </h1>
         <hr />
         <div class="columns">
