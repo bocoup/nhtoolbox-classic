@@ -18,6 +18,7 @@ Theme Name: NH Toolbox Classic
   --link: #3B7BFD;
   --regular-weight: 400;
   --medium-weight: 500;
+  --semi-bold-weight: 600;
   --bold-weight: 700;
 }
 
@@ -27,27 +28,27 @@ Theme Name: NH Toolbox Classic
 
 .dark-hero-body {
   text-align: center;
-  /* max-width: 68.75rem;
+  max-width: 68.75rem;
   margin-left: auto;
-  margin-right: auto; */
+  margin-right: auto;
 }
 
-.playfair-title {
+.dark-hero-body h1 {
   font-family: var(--playfair);
   text-align: center;
   font-size: 1.938rem;
   color: var(--dark-maroon);
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: var(--semi-bold-weight);
 }
 
-.oswald-title {
+.dark-hero-body p {
   font-family: var(--oswald);
   text-align: center;
   font-size: 2.938rem;
   color: var(--white);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: var(--medium-weight);
 }
 
 .navbar-item a{
@@ -89,13 +90,13 @@ Theme Name: NH Toolbox Classic
 }
 
 .housing-strategies-section h1{
-  font-weight: 500;
+  font-weight: var(--medium-weight);
 }
 
 .housing-strategies-section h2{
   font-size: 1.125rem;
   padding-top: 1.563rem;
-  font-weight: 500;
+  font-weight: var(--medium-weight);
 }
 
 .filter-button {
@@ -105,7 +106,7 @@ Theme Name: NH Toolbox Classic
   margin: 0.625rem;
   border-color: var(--white);
   background-color: var(--white);
-  font-weight: 400;
+  font-weight: var(--regular-weight);
 }
 
 .filter-button:hover {
@@ -118,7 +119,7 @@ Theme Name: NH Toolbox Classic
   background-color: var(--orange);
   color: var(--white);
   border-color: var(--orange);
-  font-weight: 500;
+  font-weight: var(--medium-weight);
 }
 
 .filter-button.is-active:hover {
@@ -147,7 +148,7 @@ Theme Name: NH Toolbox Classic
   font-family: var(--roboto);
   text-align: left;
   text-transform: none;
-  font-weight: 700;
+  font-weight: var(--bold-weight);
 }
 
 .strategy-card h3 a {
@@ -164,7 +165,7 @@ Theme Name: NH Toolbox Classic
   color: var(--black);
   text-align: left;
   text-transform: none;
-  font-weight: 400;
+  font-weight: var(--regular-weight);
 }
 
 .strategy-categories {
@@ -192,7 +193,7 @@ Theme Name: NH Toolbox Classic
   margin-top: 5px;
   margin-bottom: 15px;
   cursor: default;
-  font-weight: 400;
+  font-weight: var(--regular-weight);
 }
 
 .strategy-oswald-title {
@@ -200,7 +201,7 @@ Theme Name: NH Toolbox Classic
   font-size: 47px;
   color: var(--white);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: var(--medium-weight);
 }
 
 .strategy-hero {
@@ -209,31 +210,32 @@ Theme Name: NH Toolbox Classic
   border: 1px solid var(--beige);
 }
 
-/* .strategy-hero-body {
-  max-width: 1125px;
+.strategy-hero-body {
+  max-width: 68.75rem;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
 .issues-addressed-text {
   vertical-align:middle;
   font-size: 16px;
   color: var(--white);
-  font-weight: 700;
+  font-weight: var(--bold-weight);
+  margin-right: 25px;
 }
 
 .strategy-main {
   margin: 20px;
-  /* max-width: 1125px;
+  max-width: 68.75rem;
   margin-left: auto;
-  margin-right: auto; */
+  margin-right: auto;
 }
 
 .strategy-main-header {
   color: var(--orange);
   font-family: var(--oswald);
   font-size: 34px;
-  font-weight: 500;
+  font-weight: var(--medium-weight);
 }
 
 .strategy-main-section {
@@ -245,26 +247,26 @@ Theme Name: NH Toolbox Classic
 .strategy-main-section-content p{
   margin-top: 20px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: var(--regular-weight);
 }
 
 .strategy-main-section-content.dot li{
   list-style: disc;
   margin-left: 40px;
   margin-top: 20px;
-  font-weight: 400;
+  font-weight: var(--regular-weight);
 }
 
 .strategy-main-section-content.numbered li{
   list-style: decimal;
   margin-left: 40px;
   margin-top: 20px;
-  font-weight: 400;
+  font-weight: var(--regular-weight);
 }
 
 .strategy-main-section-content.numbered li ol li{
   list-style:lower-latin;
-  font-weight: 400;
+  font-weight: var(--regular-weight);
 }
 
 .strategy-featured-image {
@@ -275,7 +277,7 @@ Theme Name: NH Toolbox Classic
   margin-left: 20px;
   font-family: var(--roboto);
   color: var(--orange);
-  font-weight: 400;
+  font-weight: var(--regular-weight);
 }
 
 .sidebar {
@@ -327,9 +329,9 @@ Theme Name: NH Toolbox Classic
   background-color: var(--dark-maroon);
 }
 
-/* .related-tools-hero-body{
-  max-width: 1525px;
-} */
+.related-tools-hero-body{
+  max-width: 90rem;
+}
 
 .related-tools-hero-body hr{
   background-color: var(--orange);
@@ -396,23 +398,23 @@ Theme Name: NH Toolbox Classic
   padding: 10px;
 }
 
-/* .breadcrumb {
-  max-width: 1125px;
+.breadcrumb {
+  max-width: 68.75rem;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
-/* nav {
-  max-width: 1125px;
+nav {
+  max-width: 68.75rem;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
-/* .case-study-hero {
-  max-width: 1125px;
+.case-study-hero {
+  max-width: 68.75rem;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
 .case-study-hero-body {
   padding-bottom: 10px !important;
@@ -453,6 +455,13 @@ Theme Name: NH Toolbox Classic
 
 .issues-addressed-text-case-study {
   margin-top: 5px;
+}
+
+.case-study-main {
+
+  max-width: 68.75rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .case-study-main h2 {
