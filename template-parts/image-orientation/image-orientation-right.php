@@ -5,7 +5,7 @@ $value = $args['value'];
 
 <div class="case-study-main-section">
     <div class="columns">
-        <div class="column">
+        <div class="column is-10">
             <h2>
                 <?php echo $value->post_title ?>
             </h2>

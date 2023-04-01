@@ -31,7 +31,7 @@ $value = $args['value'];
             </div>
 
         </div>
-        <div class="column">
+        <div class="column is-10">
             <h2>
                 <?php echo $value->post_title ?>
             </h2>

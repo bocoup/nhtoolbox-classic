@@ -5,8 +5,7 @@
         if (!empty($field)): ?>
             <div class="strategy-main-section">
                 <h2 class="strategy-main-header">What is it?</h2>
-                <div class="strategy-main-section-content">
-
+                <div class="strategy-main-section-content dot">
                     <?php echo $field ?>
                 </div>
             </div>
