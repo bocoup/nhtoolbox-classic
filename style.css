@@ -465,7 +465,6 @@ nav {
 }
 
 .case-study-main {
-
   max-width: 68.75rem;
   margin-left: auto;
   margin-right: auto;
@@ -485,7 +484,8 @@ nav {
 }
 
 .case-study-main-section {
-  margin-left: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .case-study-main-section li {
