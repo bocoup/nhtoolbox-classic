@@ -344,7 +344,7 @@ Text Domain: NHToolbox
   background-color: var(--orange);
 }
 
-.related-tools-hero-body h2{
+.related-tools-hero-body h1{
   color: var(--white);
   font-family: var(--oswald);
   font-size: 34px;
