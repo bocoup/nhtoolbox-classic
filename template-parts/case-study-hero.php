@@ -16,7 +16,7 @@
         <h1>
             <?php echo get_the_title(); ?> <span>Case Studies</span>
         </h1>
-        <hr />
+        <hr aria-hidden="true"/>
         <div class="columns">
             <div class="column issues-addressed-text-case-study is-2">
                 Issues Addressed:
@@ -33,7 +33,7 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <hr />
+        <hr aria-hidden="true"/>
 
     </div>
 </main>

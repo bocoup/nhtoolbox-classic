@@ -1,7 +1,7 @@
 <section aria-label="Housing Strategies" class="hero housing-strategies-section">
   <div class="hero-body">
     <h1>Housing Strategies</h1>
-    <hr class="housing-strategies-separator"/>
+    <hr class="housing-strategies-separator" aria-hidden="true"/>
     <h2>Filter by Issues Addressed</h2>
     <div>
         <a id="all Button" role="button" class="button filter-button">All</a> <?php
@@ -79,7 +79,7 @@ $args = array(
                         <p class="excerpt"><?php the_excerpt(); ?></p> 
                     </div>
                 </div>
-                <hr class="strategy-card-separator"/>
+                <hr class="strategy-card-separator" aria-hidden="true"/>
                     <div class="strategy-categories">
                     <?php
                         $categories = get_the_category(); 

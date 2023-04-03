@@ -1,7 +1,7 @@
 <section aria-label="Related Tools" class="related-tools-hero hero">
     <div class="related-tools-hero-body hero-body">
         <h1>Related Tools</h1>
-        <hr />
+        <hr aria-hidden="true" />
         <div class="columns is-multiline">
             <?php
             $field = get_field("related_tools");

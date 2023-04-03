@@ -68,7 +68,7 @@
             if (!empty($field)): ?>
                 <div class="sidebar-container">
                     <h3>State Law</h3>
-                    <hr class="sidebar-separator" />
+                    <hr class="sidebar-separator" aria-hidden="true" />
                     <div>
 
                         <?php foreach ($field as $value): ?>
@@ -87,7 +87,7 @@
                 ?>
                 <div class="sidebar-container">
                     <h3>Case Studies</h3>
-                    <hr class="sidebar-separator" />
+                    <hr class="sidebar-separator" aria-hidden="true" />
                     <div>
 
                         <?php foreach ($field as $value): ?>
@@ -107,7 +107,7 @@
             if (!empty($field)): ?>
                 <div class="sidebar-container">
                     <h3>Resources</h3>
-                    <hr class="sidebar-separator" />
+                    <hr class="sidebar-separator" aria-hidden="true" />
                     <div>
 
                         <?php foreach ($field as $value): ?>
