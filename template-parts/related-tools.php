@@ -1,6 +1,6 @@
-<section class="related-tools-hero hero">
+<section aria-label="Related Tools" class="related-tools-hero hero">
     <div class="related-tools-hero-body hero-body">
-        <h2>Related Tools</h2>
+        <h1>Related Tools</h1>
         <hr />
         <div class="columns is-multiline">
             <?php

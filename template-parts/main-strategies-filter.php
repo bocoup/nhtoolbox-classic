@@ -1,4 +1,4 @@
-<section class="hero housing-strategies-section">
+<section aria-label="Housing Strategies" class="hero housing-strategies-section">
   <div class="hero-body">
     <h1>Housing Strategies</h1>
     <hr class="housing-strategies-separator"/>
@@ -98,6 +98,8 @@ $args = array(
     
     <?php endwhile; ?>
     </div>
+    <?php else: ?>
+        <div>No results</div>
     <?php endif; wp_reset_postdata(); ?>
 
 

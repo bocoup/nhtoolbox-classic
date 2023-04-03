@@ -11,7 +11,7 @@
         </ul>
     </nav>
 </div>
-<section class="hero case-study-hero">
+<main class="hero case-study-hero">
     <div class="case-study-hero-body hero-body">
         <h1>
             <?php echo get_the_title(); ?> <span>Case Studies</span>
@@ -36,4 +36,4 @@
         <hr />
 
     </div>
-</section>
+</main>

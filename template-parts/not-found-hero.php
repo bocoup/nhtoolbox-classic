@@ -1,4 +1,4 @@
-<section class="hero not-found-hero">
+<main class="hero not-found-hero">
     <div class="not-found-hero-body hero-body">
         This page doesn't exist :/
         <?php
@@ -15,4 +15,4 @@
 
         </div>
     </div>
-</section>
+</main>

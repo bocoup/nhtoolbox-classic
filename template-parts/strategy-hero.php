@@ -8,7 +8,7 @@
     </ul>
 </nav>
 </div>
-<section class="hero strategy-hero">
+<main class="hero strategy-hero">
     <div class="strategy-hero-body hero-body">
         <div class="columns is-vcentered">
             <div class="column is-8">
@@ -26,9 +26,9 @@
                         $categories = get_the_category();
                         foreach ($categories as $cat):
                             ?>
-                            <span class="button category-button">
-                                <?php echo $cat->name; ?>
-                            </span>
+                                <span class="button category-button">
+                                    <?php echo $cat->name; ?>
+                                </span>
 
                         <?php endforeach; ?>
                     </div>
@@ -38,11 +38,11 @@
                 <?php
                 $graphic_design = get_field("graphic_design");
                 if (!empty($graphic_design)): ?>
-                    <img height="301px" width="301px" src="<?php echo esc_url($graphic_design['url']); ?>"
-                        alt="<?php echo esc_attr($graphic_design['alt']); ?>" />
+                        <img height="301px" width="301px" src="<?php echo esc_url($graphic_design['url']); ?>"
+                            alt="<?php echo esc_attr($graphic_design['alt']); ?>" />
                 <?php endif; ?>
             </div>
         </div>
 
     </div>
-</section>
+</main>

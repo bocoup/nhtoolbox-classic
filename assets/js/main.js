@@ -59,17 +59,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const filterButtonValue = filterButton.id.split(" Button")[0];
         if(filters.includes(filterButtonValue)){
           filterButton.classList.add("is-active");
-          filterButton.ariaSelected = "true";
+          filterButton.ariaLabel = filterButtonValue + " is selected.";
         }
         else {
           filterButton.classList.remove("is-active");
-          filterButton.ariaSelected = "false";
+          filterButton.ariaLabel = filterButtonValue;
         }
       }
     }
     else {
       let allButton = document.getElementById("all Button");
-      allButton.ariaSelected = true;
+      filterButton.ariaLabel = filterButtonValue + " is selected.";
       allButton.classList.add("is-active");
     }
   
