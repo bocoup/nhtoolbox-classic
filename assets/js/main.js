@@ -59,17 +59,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const filterButtonValue = filterButton.id.split(" Button")[0];
         if(filters.includes(filterButtonValue)){
           filterButton.classList.add("is-active");
-          filterButton.ariaLabel = "turn " + filterButtonValue + "filter off";
+          filterButton.ariaLabel = "turn " + filterButtonValue + " filter off";
         }
         else {
-          filterButton.classList.remove("is-active");
-          filterButton.ariaLabel = "turn " + filterButtonValue + "filter on";
+          if(filterButtonValue == "all"){
+            filterButton.classList.remove("is-active");
+            filterButton.ariaLabel = "clear all filters.";
+          }
+          else {
+            filterButton.classList.remove("is-active");
+            filterButton.ariaLabel = "turn " + filterButtonValue + " filter on";
+          }
         }
       }
     }
     else {
       let allButton = document.getElementById("all Button");
-      filterButton.ariaLabel = "turn " + filterButtonValue + "filter off";
+      allButton.ariaLabel = "clear filters button. all filters are currently cleared.";
       allButton.classList.add("is-active");
     }
   

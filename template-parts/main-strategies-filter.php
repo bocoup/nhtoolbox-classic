@@ -24,7 +24,7 @@
             foreach($categories as $category) {
                 if($category->name != "Uncategorized"):
                     $filter_id = $category->slug . " Button";
-                    echo '<a id="'.$filter_id.'" role="button" class="button filter-button">' . $category->name . '</a>';
+                    echo '<a aria-label="turn '. $category->name  .' filter on" id="'.$filter_id.'" role="button" class="button filter-button">' . $category->name . '</a>';
                 endif;
             }
         ?>
