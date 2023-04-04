@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     else {
       let allButton = document.getElementById("all Button");
-      allButton.ariaLabel = "clear filters button. all filters are currently cleared.";
-      allButton.classList.add("is-active");
+      allButton?.ariaLabel = "clear filters button. all filters are currently cleared.";
+      allButton?.classList.add("is-active");
     }
   
 });
