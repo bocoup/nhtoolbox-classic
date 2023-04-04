@@ -12,7 +12,7 @@
                     $graphic_design = get_field("graphic_design", $value->ID);
                     $permalink = get_permalink($value->ID);
                     ?>
-                    <div class="column related-tool-card is-2">
+                    <div class="column related-tool-card is-3">
                         <?php if (!empty($graphic_design)): ?>
                             <img height="172px" width="172px" src="<?php echo esc_url($graphic_design['url']); ?>"
                                 alt="<?php echo esc_attr($graphic_design['alt']); ?>" />

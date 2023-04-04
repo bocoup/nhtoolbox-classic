@@ -505,3 +505,7 @@ nav {
   font-family: var(--roboto);
   color: var(--orange);
 }
+
+.page-content {
+  margin: 10px;
+}
