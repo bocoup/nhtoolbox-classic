@@ -1,5 +1,4 @@
 <?php
-require_once get_template_directory() . '/classes/custom-post-types/custom-post-types.php';
 require_once get_template_directory() . '/classes/enqueue-styles.php';
 require_once get_template_directory() . '/classes/enqueue-scripts.php';
 require_once get_template_directory() . '/classes/theme-support.php';
