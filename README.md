@@ -28,6 +28,9 @@ This is a template for the header/navbar.
 ### index.php
 This is a template for the index page.
 
+### page.php
+This is a template for any page.
+
 ### single.php
 This is a template for the strategies post type.
 
