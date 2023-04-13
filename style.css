@@ -146,9 +146,9 @@ Text Domain: NHToolbox
 }
 
 .filter-button.is-active {
-  background-color: var(--orange);
+  background-color: #711115;
   color: var(--white);
-  border-color: var(--orange);
+  border-color: #711115;
   font-weight: var(--medium-weight);
 }
 
