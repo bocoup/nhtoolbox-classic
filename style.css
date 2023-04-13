@@ -75,6 +75,9 @@ Text Domain: NHToolbox
 .main-footer {
   text-align: center;
   font-family: var(--roboto);
+}
+
+.main-footer p {
   margin: 3rem;
 }
 
@@ -90,16 +93,12 @@ Text Domain: NHToolbox
 }
 
 .housing-strategies-section {
-  background-color: var(--dark-maroon);
+  background: #fefded;
   font-family: var(--oswald);
   text-transform: uppercase;
   text-align: center;
   color: var(--white);
   font-size: 2.375rem;
-}
-
-.housing-strategies-section h2 {
-  margin-top: 4rem;
 }
 
 .housing-strategies-separator {
@@ -114,7 +113,6 @@ Text Domain: NHToolbox
   height: 1px;
   background: #e8e7d2;
   margin: 0.5rem auto;
-  width: 85%;
 }
 
 .housing-strategies-section h1 {
@@ -128,6 +126,7 @@ Text Domain: NHToolbox
   padding-top: 1.563rem;
   font-weight: var(--medium-weight);
   color: #393939;
+  margin-top: 4rem;
 }
 
 .filter-button {
@@ -238,8 +237,9 @@ Text Domain: NHToolbox
   font-size: 0.85rem;
 }
 
-.category-button {
+.category-button:hover {
   pointer-events: none;
+  border: none;
 }
 
 .strategy-oswald-title {
@@ -345,13 +345,15 @@ Text Domain: NHToolbox
   border: 1px solid var(--beige);
   margin: 20px;
   border-radius: 5px;
+}
+
+.sidebar-container .sidebar-separator {
   height: 1px;
 }
 
 .sidebar-separator {
   background-color: var(--beige);
   margin: 20px;
-  height: 1px;
 }
 
 .sidebar-container h3 {
@@ -429,6 +431,8 @@ Text Domain: NHToolbox
 
 .related-tool-card a {
   color: var(--dark-maroon);
+  font-size: 1.5em;
+  line-height: 1;
 }
 
 .related-tool-card a:hover {
@@ -566,4 +570,22 @@ nav {
 
 .page-content {
   margin: 10px;
+}
+
+.page-content h3 {
+  color: var(--orange);
+  font-family: var(--oswald);
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-weight: var(--medium-weight);
+  margin-top: 20px;
+}
+
+.page-content p {
+  color: var(--orange);
+  font-family: var(--oswald);
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-weight: var(--medium-weight);
+  margin-top: 20px;
 }
