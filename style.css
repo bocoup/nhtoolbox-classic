@@ -29,6 +29,10 @@ Text Domain: NHToolbox
   --bold-weight: 700;
 }
 
+.logo {
+  max-width: 197px;
+}
+
 .dark-hero {
   background-color: var(--orange);
   padding: 5rem 3rem;
