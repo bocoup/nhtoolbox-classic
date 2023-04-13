@@ -582,10 +582,7 @@ nav {
 }
 
 .page-content p {
-  color: var(--orange);
-  font-family: var(--oswald);
-  font-size: 34px;
-  margin-bottom: 10px;
-  font-weight: var(--medium-weight);
   margin-top: 20px;
+  font-size: 16px;
+  font-weight: var(--regular-weight);
 }
