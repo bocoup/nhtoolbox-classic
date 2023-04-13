@@ -414,7 +414,7 @@ Text Domain: NHToolbox
   border-radius: 5px;
   color: var(--dark-maroon);
   font-family: var(--roboto);
-  max-width: max-content;
+  min-width: max-content;
   font-size: 1.5em;
   line-height: 1;
 }
@@ -433,7 +433,7 @@ Text Domain: NHToolbox
 
 .related-tool-card a {
   color: var(--dark-maroon);
-  font-size: 1.5em;
+  font-size: 16px;
   line-height: 1;
 }
 
@@ -522,6 +522,13 @@ nav {
   margin-bottom: 10px;
   cursor: default;
   background-color: var(--offwhite);
+  pointer-events: none;
+  border: none;
+}
+
+.category-button-case-study:hover {
+  pointer-events: none;
+  border: none;
 }
 
 .issues-addressed-text-case-study {

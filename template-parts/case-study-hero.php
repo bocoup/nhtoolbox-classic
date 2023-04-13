@@ -26,9 +26,9 @@
                 $categories = get_the_category();
                 foreach ($categories as $cat):
                     ?>
-                    <span class="button category-button-case-study">
-                        <?php echo $cat->name; ?>
-                    </span>
+                        <span class="button category-button-case-study">
+                            <?php echo $cat->name; ?>
+                        </span>
 
                 <?php endforeach; ?>
             </div>

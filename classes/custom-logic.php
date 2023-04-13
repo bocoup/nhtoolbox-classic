@@ -52,3 +52,10 @@ function cp_change_post_object() {
 //REMOVE BLOCK EDITOR
 
 add_filter('use_block_editor_for_post', '__return_false');
+
+//ADD SVG SUPPORT
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+  }
+  add_filter('upload_mimes', 'cc_mime_types');
