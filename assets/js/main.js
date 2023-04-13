@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     !url.endsWith("issues-addressed=")
   ) {
     strategiesElement.scrollIntoView();
+    strategiesElement.focus();
     let filters = url.split("issues-addressed=")[1].split(",");
     for (filterButton of filterButtons) {
       const filterButtonValue = filterButton.id.split(" Button")[0];
