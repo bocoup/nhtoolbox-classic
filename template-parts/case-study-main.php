@@ -36,10 +36,11 @@
                     <h3>State Law</h3>
                     <hr class="sidebar-separator" aria-hidden="true" />
                     <div>
+                        <ul>
                         <?php foreach ($field as $value): ?>
                             <li><a target="_blank" href="<?php echo esc_url($value['state_law_url']); ?>"><?php echo $value['state_law_name'] ?> <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
                         <?php endforeach; ?>
-
+                        </ul>
                     </div>
                 </div>
             <?php endif; ?>
@@ -50,10 +51,11 @@
                     <h3>Resources</h3>
                     <hr class="sidebar-separator" aria-hidden="true" />
                     <div>
-
+                        <ul>
                         <?php foreach ($field as $value): ?>
                             <li><a target="_blank" href="<?php echo esc_url($value['resource_url']); ?>"><?php echo $value['resource_name'] ?></a></li>
                         <?php endforeach; ?>
+                        </ul>
                     </div>
                 </div>
             <?php endif; ?>

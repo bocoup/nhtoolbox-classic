@@ -47,10 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
+  const strategiesElement = document.getElementById("strategies");
+
   if (
     url.indexOf("issues-addressed") > -1 &&
     !url.endsWith("issues-addressed=")
   ) {
+    strategiesElement.scrollIntoView();
     let filters = url.split("issues-addressed=")[1].split(",");
     for (filterButton of filterButtons) {
       const filterButtonValue = filterButton.id.split(" Button")[0];

@@ -62,7 +62,7 @@ $args = array(
     );
     $result = new WP_Query( $args );
     if ( $result-> have_posts() ) : ?>
-    <div class="columns is-multiline is-centered">
+    <div id="strategies" class="columns is-multiline is-centered">
     <?php while ( $result->have_posts() ) : $result->the_post(); ?>
         <div class="column is-4">
             <div class="strategy-card">
@@ -99,7 +99,7 @@ $args = array(
     <?php endwhile; ?>
     </div>
     <?php else: ?>
-        <div>No results</div>
+        <h3 class="no-results" id="strategies">No results</h3>
     <?php endif; wp_reset_postdata(); ?>
 
 

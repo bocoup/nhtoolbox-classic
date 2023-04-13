@@ -16,7 +16,6 @@
                     <div class="strategy-main-section">
                         <h2 class="strategy-main-header">How can it help?</h2>
                         <div class="strategy-main-section-content dot">
-
                             <?php echo $field ?>
                         </div>
                     </div>
@@ -28,9 +27,7 @@
                     <div class="strategy-main-section">
                         <h2 class="strategy-main-header">Getting Started</h2>
                         <div class="strategy-main-section-content numbered">
-
                             <?php echo $field ?>
-
                         </div>
                     </div>
         <?php endif; ?>
