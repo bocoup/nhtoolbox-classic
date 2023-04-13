@@ -569,7 +569,8 @@ nav {
 }
 
 .page-content {
-  margin: 10px;
+  margin: auto;
+  max-width: 1100px;
 }
 
 .page-content h3 {
@@ -579,6 +580,14 @@ nav {
   margin-bottom: 10px;
   font-weight: var(--medium-weight);
   margin-top: 20px;
+}
+
+.page-content h1 {
+  font-size: 47px;
+  color: var(--dark-maroon);
+  font-family: var(--oswald);
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .page-content p {
