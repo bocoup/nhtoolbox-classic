@@ -2,7 +2,7 @@
   <div class="hero-body">
     <h1>Housing Strategies</h1>
     <hr class="housing-strategies-separator" aria-hidden="true"/>
-    <h2>Filter by Issues Addressed</h2>
+    <h2 id="strategies">Filter by Issues Addressed</h2>
     <div>
         <a id="all Button" role="button" class="button filter-button">All</a> <?php
             $categories = get_categories( array(
@@ -62,7 +62,7 @@ $args = array(
     );
     $result = new WP_Query( $args );
     if ( $result-> have_posts() ) : ?>
-    <div id="strategies" class="columns is-multiline is-centered">
+    <div class="columns is-multiline is-centered">
     <?php while ( $result->have_posts() ) : $result->the_post(); ?>
         <div class="column is-4">
             <div class="strategy-card">
@@ -99,7 +99,7 @@ $args = array(
     <?php endwhile; ?>
     </div>
     <?php else: ?>
-        <h3 class="no-results" id="strategies">No results</h3>
+        <h3 class="no-results">No results</h3>
     <?php endif; wp_reset_postdata(); ?>
 
 
