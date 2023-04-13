@@ -1,5 +1,5 @@
 <footer class="main-footer">
-<img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-seperator.png" alt="footer separator">
+<div aria-hidden="true" class="footer-repeater"></div>
 <p><?php echo get_bloginfo( 'name' ); ?> / <?php echo date("Y") ?> </p>
            
 </footer>

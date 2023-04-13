@@ -1,6 +1,6 @@
 <section aria-label="Related Tools" class="related-tools-hero hero">
     <div class="related-tools-hero-body hero-body">
-        <h1>Related Tools</h1>
+        <h4>Related Tools</h4>
         <hr aria-hidden="true" />
         <div class="columns is-multiline">
             <?php
@@ -17,9 +17,9 @@
                             <img height="172px" width="172px" src="<?php echo esc_url($graphic_design['url']); ?>"
                                 alt="<?php echo esc_attr($graphic_design['alt']); ?>" />
                         <?php endif; ?>
-                        <h4>
+                        <h5>
                             <a href="<?php echo esc_url($permalink) ?>"><?php echo $value->post_title ?></a>
-                        </h4>
+                        </h5>
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>

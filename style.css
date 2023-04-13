@@ -11,18 +11,18 @@ Text Domain: NHToolbox
 */
 
 :root {
-  --orange: #f7714e;
+  --orange: #f66541;
   --dark-maroon: #711115;
   --white: #fff;
   --black: #393939;
   --gray: #454444;
-  --offwhite: #F4F3E2;
-  --beige: #E2DFB6;
-  --breadcrumb: #FEFDED;
+  --offwhite: #f4f3e2;
+  --beige: #e2dfb6;
+  --breadcrumb: #fefded;
   --playfair: "Playfair Display", serif;
   --oswald: "Oswald", sans-serif;
-  --roboto: 'Roboto', sans-serif;
-  --link: #3B7BFD;
+  --roboto: "Roboto", sans-serif;
+  --link: #3b7bfd;
   --regular-weight: 400;
   --medium-weight: 500;
   --semi-bold-weight: 600;
@@ -31,6 +31,7 @@ Text Domain: NHToolbox
 
 .dark-hero {
   background-color: var(--orange);
+  padding: 5rem 3rem;
 }
 
 .dark-hero-body {
@@ -58,19 +59,30 @@ Text Domain: NHToolbox
   font-weight: var(--medium-weight);
 }
 
-.navbar-item a{
-    font-family: var(--roboto);
-    color: var(--black) !important;
+.navbar-item a {
+  font-family: var(--roboto);
+  color: var(--black) !important;
 }
 
-.navbar-item a:hover{
-    text-decoration: underline;
+.navbar-item a:hover {
+  text-decoration: underline;
 }
 
 .main-footer {
-    text-align: center;
-    font-family: var(--roboto);
-    margin-bottom: 0.625rem;
+  text-align: center;
+  font-family: var(--roboto);
+  margin: 3rem;
+}
+
+.footer-repeater {
+  height: 14px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #fa714e,
+    #fa714e 10px,
+    #ffffff 2px,
+    #ffffff 20px
+  );
 }
 
 .housing-strategies-section {
@@ -82,28 +94,36 @@ Text Domain: NHToolbox
   font-size: 2.375rem;
 }
 
+.housing-strategies-section h2 {
+  margin-top: 4rem;
+}
+
 .housing-strategies-separator {
   background-color: var(--orange);
   width: 15%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.5rem;
 }
 
 .strategy-card-separator {
-  background-color: var(--beige);
+  height: 1px;
+  background: #e8e7d2;
+  margin: 0.5rem auto;
   width: 85%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.housing-strategies-section h1{
+.housing-strategies-section h1 {
   font-weight: var(--medium-weight);
+  background: #fefded;
+  color: #711115;
 }
 
-.housing-strategies-section h2{
+.housing-strategies-section h2 {
   font-size: 1.125rem;
   padding-top: 1.563rem;
   font-weight: var(--medium-weight);
+  color: #393939;
 }
 
 .filter-button {
@@ -111,15 +131,15 @@ Text Domain: NHToolbox
   font-size: 1rem;
   text-transform: none;
   margin: 0.625rem;
-  border-color: var(--white);
-  background-color: var(--white);
+  border-color: #e8e7d2;
+  background-color: white;
   font-weight: var(--regular-weight);
 }
 
 .filter-button:hover {
-  background-color: var(--orange);
+  background: #711115;
   color: var(--white);
-  border-color: var(--orange);
+  border: none;
 }
 
 .filter-button.is-active {
@@ -136,14 +156,15 @@ Text Domain: NHToolbox
 }
 
 .strategy-card {
-  background-color: var(--offwhite);
+  background: white;
+  border-color: #e8e7d2;
   margin-top: 1.25rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 0.313rem;
   display: flex;
-   flex-direction: column;
-   height: 100%;
+  flex-direction: column;
+  height: 100%;
 }
 
 .strategy-card .columns {
@@ -156,6 +177,13 @@ Text Domain: NHToolbox
   text-align: left;
   text-transform: none;
   font-weight: var(--bold-weight);
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: #fa714e;
+}
+
+.strategy-card img {
+  max-width: 172px;
 }
 
 .strategy-card h3 a {
@@ -196,11 +224,18 @@ Text Domain: NHToolbox
 }
 
 .category-button {
-  border-radius:18px;
+  border-radius: 18px;
   margin-top: 5px;
   margin-bottom: 15px;
   cursor: default;
   font-weight: var(--regular-weight);
+  background: #f4f3e2;
+  border: none;
+  font-size: 0.85rem;
+}
+
+.category-button {
+  pointer-events: none;
 }
 
 .strategy-oswald-title {
@@ -212,19 +247,27 @@ Text Domain: NHToolbox
 }
 
 .strategy-hero {
-  background-color: var(--orange);
-
+  background: #f66541;
   border: 1px solid var(--beige);
 }
 
+.category-button .strategy-hero {
+  border: none;
+  font-size: 0.85rem;
+}
+
 .strategy-hero-body {
-  max-width: 68.75rem;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.strategy-hero-body img {
+  max-width: 500px;
+}
+
 .issues-addressed-text {
-  vertical-align:middle;
+  vertical-align: middle;
   font-size: 16px;
   color: var(--white);
   font-weight: var(--bold-weight);
@@ -239,7 +282,7 @@ Text Domain: NHToolbox
 }
 
 .strategy-main-header {
-  color: var(--orange);
+  color: #f66541;
   font-family: var(--oswald);
   font-size: 34px;
   font-weight: var(--medium-weight);
@@ -249,35 +292,36 @@ Text Domain: NHToolbox
   margin-top: 10px;
   margin-bottom: 50px;
   margin-right: 40px;
+  color: #393939;
 }
 
-.strategy-main-section-content p{
+.strategy-main-section-content p {
   margin-top: 20px;
   font-size: 16px;
   font-weight: var(--regular-weight);
 }
 
-.strategy-main-section-content.dot li{
+.strategy-main-section-content.dot li {
   list-style: disc;
   margin-left: 40px;
   margin-top: 20px;
   font-weight: var(--regular-weight);
 }
 
-.strategy-main-section-content.numbered li{
+.strategy-main-section-content.numbered li {
   list-style: decimal;
   margin-left: 40px;
   margin-top: 20px;
   font-weight: var(--regular-weight);
 }
 
-.strategy-main-section-content.numbered li ol li{
-  list-style:lower-latin;
+.strategy-main-section-content.numbered li ol li {
+  list-style: lower-latin;
   font-weight: var(--regular-weight);
 }
 
 .strategy-featured-image {
-  margin-left:20px;
+  margin-left: 20px;
 }
 
 .image-caption {
@@ -288,7 +332,7 @@ Text Domain: NHToolbox
 }
 
 .sidebar {
-  padding:10px;
+  padding: 10px;
   position: sticky;
   top: 0;
 }
@@ -296,14 +340,17 @@ Text Domain: NHToolbox
 .sidebar-container {
   border: 1px solid var(--beige);
   margin: 20px;
+  border-radius: 5px;
+  height: 1px;
 }
 
 .sidebar-separator {
   background-color: var(--beige);
-  margin:20px;
+  margin: 20px;
+  height: 1px;
 }
 
-.sidebar-container h3{
+.sidebar-container h3 {
   color: var(--orange);
   font-family: var(--oswald);
   font-size: 24px;
@@ -311,7 +358,7 @@ Text Domain: NHToolbox
   font-weight: var(--medium-weight);
 }
 
-.sidebar-container li{
+.sidebar-container li {
   color: var(--black);
   font-family: var(--roboto);
   font-size: 16px;
@@ -319,55 +366,60 @@ Text Domain: NHToolbox
   font-weight: var(--regular-weight);
 }
 
-.sidebar-container a{
-  color:var(--link)
+.sidebar-container a {
+  color: var(--link);
 }
 
-.sidebar-container a:hover{
+.sidebar-container a:hover {
   text-decoration: underline;
-  color:var(--link)
+  color: var(--link);
 }
 
 .read-more {
   margin: 20px;
 }
 
-.related-tools-hero{
-  background-color: var(--dark-maroon);
+.related-tools-hero {
+  background: #f4f3e2;
 }
 
-.related-tools-hero-body{
+.related-tools-hero-body {
   max-width: 90rem;
+  margin: auto;
 }
 
-.related-tools-hero-body hr{
-  background-color: var(--orange);
+.related-tools-hero-body hr {
+  background: #e2dfb6;
+  height: 1px;
 }
 
-.related-tools-hero-body h1{
-  color: var(--white);
+.related-tools-hero-body h4 {
+  color: #711115;
   font-family: var(--oswald);
   font-size: 34px;
   font-weight: var(--medium-weight);
 }
 
 .related-tool-card {
-  background-color: var(--offwhite);
+  background-color: white;
   margin: 20px;
   border-radius: 5px;
   color: var(--dark-maroon);
   font-family: var(--roboto);
   max-width: max-content;
+  font-size: 1.5em;
+  line-height: 1;
 }
 
-.related-tool-card img{
+.related-tool-card img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 286px;
 }
 
-.related-tool-card h4{
-  margin:10px;
+.related-tool-card h5 {
+  margin: 10px;
   font-weight: var(--medium-weight);
 }
 
@@ -380,7 +432,7 @@ Text Domain: NHToolbox
 }
 
 .not-found-hero {
- background-color: var(--orange);
+  background-color: var(--orange);
 }
 
 .not-found-hero-body {
@@ -402,10 +454,12 @@ Text Domain: NHToolbox
 .breadcrumb-container {
   background-color: var(--breadcrumb);
   border: 1px solid var(--beige);
-  padding: 10px;
+  border-bottom: none;
+  padding: 1rem;
 }
 
 .breadcrumb {
+  font-size: 0.85rem;
   max-width: 68.75rem;
   margin-left: auto;
   margin-right: auto;
@@ -432,11 +486,11 @@ nav {
   color: var(--dark-maroon);
   font-family: var(--oswald);
   text-transform: uppercase;
-  font-weight: var(--medium-weight);
+  font-weight: 300;
 }
 
-.case-study-hero h1 span{
-  font-weight: var(--bold-weight);
+.case-study-hero h1 span {
+  font-weight: 500;
 }
 
 .case-study-hero hr {
@@ -454,7 +508,7 @@ nav {
 }
 
 .category-button-case-study {
-  border-radius:18px;
+  border-radius: 18px;
   margin-bottom: 10px;
   cursor: default;
   background-color: var(--offwhite);
@@ -489,8 +543,8 @@ nav {
 }
 
 .case-study-main-section li {
-  list-style:disc;
-  margin:20px;
+  list-style: disc;
+  margin: 20px;
 }
 
 .case-study-main-section a {
