@@ -67,14 +67,14 @@ $args = array(
         <div class="column is-4">
             <div class="strategy-card">
                 <div class="columns">
-                    <div class="column">
+                    <div class="column is-6-card">
                         <?php
                             $graphic_design = get_field("graphic_design");
                             if( !empty( $graphic_design ) ): ?>
-                                <img height="172px" width="172px" src="<?php echo esc_url($graphic_design['url']); ?>" alt="<?php echo esc_attr($graphic_design['alt']); ?>" />
+                                <img src="<?php echo esc_url($graphic_design['url']); ?>" alt="<?php echo esc_attr($graphic_design['alt']); ?>" />
                         <?php endif; ?> 
                     </div>
-                    <div class="column">
+                    <div class="column is-6-card">
                         <h3><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h3>   
                         <p class="excerpt"><?php the_excerpt(); ?></p> 
                     </div>

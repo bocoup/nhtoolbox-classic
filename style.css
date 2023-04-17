@@ -177,10 +177,11 @@ img.logo {
 
 .strategy-card .columns {
   margin: 10px;
+  display: block;
 }
 
 .strategy-card h3 {
-  font-size: 24px;
+  font-size: 1.1rem;
   font-family: var(--roboto);
   text-align: left;
   text-transform: none;
@@ -188,10 +189,22 @@ img.logo {
   line-height: 1;
   margin-bottom: 1rem;
   color: #fa714e;
+  word-break: break-word;
 }
 
-.strategy-card img {
-  max-width: 172px;
+@media screen and (min-width: 1200px) {
+  .strategy-card .columns {
+    display: flex;
+  }
+
+  .strategy-card .columns .column.is-6-card {
+    flex: none;
+    width: 50%;
+  }
+
+  .strategy-card h3 {
+    font-size: 1.25rem;
+  }
 }
 
 .strategy-card h3 a {
