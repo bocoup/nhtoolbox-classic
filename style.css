@@ -498,7 +498,7 @@ nav {
   margin-right: auto;
 }
 
-.case-study-hero {
+.case-study-hero, .page-content {
   max-width: 68.75rem;
   margin-left: auto;
   margin-right: auto;
@@ -508,7 +508,7 @@ nav {
   padding-bottom: 10px !important;
 }
 
-.case-study-hero h1 {
+.case-study-hero h1, .page-content h1 {
   font-size: 47px;
   color: var(--dark-maroon);
   font-family: var(--oswald);
@@ -520,7 +520,7 @@ nav {
   font-weight: 500;
 }
 
-.case-study-hero hr {
+.case-study-hero hr, .page-content hr {
   background-color: var(--offwhite);
 }
 
@@ -594,11 +594,8 @@ nav {
   color: var(--orange);
 }
 
-.page-content {
-  margin: auto;
-  max-width: 1100px;
-  margin-left: 40px;
-  margin-right: 40px;
+.page-content-body {
+  padding-bottom: 3rem;
 }
 
 .page-content h3 {
