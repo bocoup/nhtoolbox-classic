@@ -1,7 +1,7 @@
 <div class="breadcrumb-container">
     <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="<?php echo get_home_url() ?>">Home</a></li>
             <li><a href="<?php esc_url(the_permalink()) ?>" aria-current="page">
                     <?php echo get_the_title(); ?>
                 </a></li>
