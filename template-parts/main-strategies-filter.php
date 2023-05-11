@@ -70,8 +70,9 @@ $args = array(
                     <div class="column is-6-card">
                         <?php
                             $graphic_design = get_field("graphic_design");
-                            if( !empty( $graphic_design ) ): ?>
-                                <img src="<?php echo esc_url($graphic_design['url']); ?>" alt="<?php echo esc_attr($graphic_design['alt']); ?>" />
+                            if( !empty( $graphic_design ) ): 
+                                $thumb = $graphic_design['sizes']['large']; ?>
+                                <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($graphic_design['alt']); ?>" />
                         <?php endif; ?> 
                     </div>
                     <div class="column is-6-card">
